@@ -17,7 +17,7 @@ package com.commonsware.android.drawer.simple;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements
     drawerLayout=(DrawerLayout)findViewById(R.id.drawer_layout);
     toggle=
         new ActionBarDrawerToggle(this, drawerLayout,
-                                  R.drawable.ic_drawer,
+//                                  R.drawable.ic_drawer,
                                   R.string.drawer_open,
                                   R.string.drawer_close);
     drawerLayout.setDrawerListener(toggle);
